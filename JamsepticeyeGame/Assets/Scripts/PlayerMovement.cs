@@ -1,26 +1,51 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement: MonoBehaviour
 {
-    [SerializeField] public float Speed = 5f;
-    [SerializeField] public float JumpForce = 1f;
+    private float horizontal;
+    private float speed = 8f;
+    private float jumpingPower = 16f;
+    private bool isFacingRight = true;
 
-    private Rigidbody2D _rb;
+    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Transform GroundCheck;
+    [SerializeField] private LayerMask GroundLayer;
 
-    private void Start()
+    void Update()
     {
-        _rb = GetComponent<Rigidbody2D>();
-    }
-    private void Update()
-    {
-        var movement = Input.GetAxis("Horizontal");
-        transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * Speed;
+        horizontal = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetButtonDown("Jump") && Mathf.Abs(_rb.velocity.y) < 0.001f)
+        if (Input.GetButtonDown("Jump") && IsGrounded())
         {
-            _rb.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
+            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+        }
+
+        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+        }
+
+        Flip();
+    }
+
+    private void FixedUpdate()
+    {
+        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+    }
+
+    private bool IsGrounded()
+    {
+        return Physics2D.OverlapCircle(GroundCheck.position, 0.2f, GroundLayer);
+    }
+
+    private void Flip()
+    {
+        if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
+        {
+            isFacingRight = !isFacingRight;
+            Vector3 localScale = transform.localScale;
+            localScale.x *= -1f;
+            transform.localScale = localScale;
         }
     }
 }
