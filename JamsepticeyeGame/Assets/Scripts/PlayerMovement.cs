@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
         var movement = Input.GetAxis("Horizontal");
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * Speed;
 
-        if (Input.GetButtonDown("Jump") || Mathf.Abs(_rb.velocity.y) < 0.001f)
+        if (Input.GetButtonDown("Jump") && Mathf.Abs(_rb.velocity.y) < 0.001f)
         {
             _rb.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
         }
