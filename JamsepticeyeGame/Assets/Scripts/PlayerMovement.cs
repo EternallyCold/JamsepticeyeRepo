@@ -1,11 +1,12 @@
 using UnityEngine;
 
-public class PlayerMovement: MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     private float horizontal;
-    private float speed = 8f;
-    private float jumpingPower = 16f;
     private bool isFacingRight = true;
+
+    [SerializeField] private float speed = 8f;
+    [SerializeField] private float jumpingPower = 16f;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform GroundCheck;
