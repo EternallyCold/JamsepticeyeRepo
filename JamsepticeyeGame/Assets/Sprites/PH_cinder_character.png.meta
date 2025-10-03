@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PH_cinder_character_0: 7372460099150397223
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
