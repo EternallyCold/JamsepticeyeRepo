@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     public float health = 100f;
     public bool isGhost = false;
-    public float ghostTime = 60f; // in seconds
+    public float ghostTime = 10f; // in seconds, low number for testing
 
     private float timeSpendAsGhost = 0f;
 
