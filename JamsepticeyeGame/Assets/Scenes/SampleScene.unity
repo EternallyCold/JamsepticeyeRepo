@@ -587,7 +587,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPos: {x: 4.5, y: -1.6, z: 0}
   endPos: {x: 6, y: 3, z: 0}
-  movementSpeed: 3
+  maxMovementSpeed: 20
+  maxAccel: 10
   rb: {fileID: 989896540}
 --- !u!50 &989896540
 Rigidbody2D:
@@ -601,7 +602,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1000
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
