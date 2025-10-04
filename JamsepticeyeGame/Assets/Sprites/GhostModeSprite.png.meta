@@ -52,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,10 +116,10 @@ TextureImporter:
       name: GhostModeSprite_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 8
-        height: 8
+        width: 9
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,10 +137,10 @@ TextureImporter:
       name: GhostModeSprite_1
       rect:
         serializedVersion: 2
-        x: 10
-        y: 1
-        width: 8
-        height: 8
+        x: 9
+        y: 0
+        width: 9
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,10 +158,10 @@ TextureImporter:
       name: GhostModeSprite_2
       rect:
         serializedVersion: 2
-        x: 19
+        x: 18
         y: 0
-        width: 8
-        height: 8
+        width: 9
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,10 +179,10 @@ TextureImporter:
       name: GhostModeSprite_3
       rect:
         serializedVersion: 2
-        x: 28
-        y: 1
-        width: 8
-        height: 8
+        x: 27
+        y: 0
+        width: 9
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,10 +200,10 @@ TextureImporter:
       name: GhostModeSprite_4
       rect:
         serializedVersion: 2
-        x: 37
+        x: 36
         y: 0
-        width: 8
-        height: 8
+        width: 9
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,10 +221,10 @@ TextureImporter:
       name: GhostModeSprite_5
       rect:
         serializedVersion: 2
-        x: 46
-        y: 1
-        width: 8
-        height: 8
+        x: 45
+        y: 0
+        width: 9
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,14 +241,20 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c6c06833b15d5aa44bc63d50518459a3
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GhostModeSprite_0: 9220524291532885124
+      GhostModeSprite_1: 4442330283584275150
+      GhostModeSprite_2: -7791701645591636713
+      GhostModeSprite_3: 8351837088748344688
+      GhostModeSprite_4: -1677766288251517587
+      GhostModeSprite_5: -882155800490400604
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
