@@ -25,11 +25,15 @@ public class Player : MonoBehaviour
         if (health <= 0f) {
             isGhost = true;
             health = 100f; // assuming ghosts can die
+        }
+
+        if (isGhost == true)
+        {
             animator.SetBool("isGhost", true); //switches player sprite to ghost sprite animation
         }
         else
         {
-            animator.SetBool("isGhost", false); //does nothing to the player sprite
+            animator.SetBool("isGhost", false); //does nothing
         }
     }
 }
