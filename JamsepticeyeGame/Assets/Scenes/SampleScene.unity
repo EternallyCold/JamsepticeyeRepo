@@ -408,6 +408,7 @@ MonoBehaviour:
   health: 100
   isGhost: 0
   ghostTime: 10
+  animator: {fileID: 0}
 --- !u!1 &904785266
 GameObject:
   m_ObjectHideFlags: 0
@@ -568,7 +569,7 @@ GameObject:
   - component: {fileID: 989896543}
   m_Layer: 0
   m_Name: Enemy1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

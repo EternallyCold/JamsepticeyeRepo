@@ -27454,7 +27454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7874421446035145288, guid: b43775a76b6d2d44ab2f03f7b01b9368, type: 3}
       propertyPath: startPos.y
-      value: 2
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 9162189485854837680, guid: b43775a76b6d2d44ab2f03f7b01b9368, type: 3}
       propertyPath: m_Mass

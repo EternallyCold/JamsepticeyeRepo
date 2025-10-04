@@ -15,6 +15,12 @@ public class Enemy : MonoBehaviour
         player = playerObj.GetComponent<Player>();
     }
 
+    void Update() {
+        if (health <= 0f) {
+            gameObject.SetActive(false);
+        }
+    }
+
     void OnCollisionStay2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("Player")) 
         {
