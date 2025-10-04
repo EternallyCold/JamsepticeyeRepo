@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -16,9 +17,8 @@ public class Player : MonoBehaviour
         if (isGhost) {
             timeSpendAsGhost += Time.deltaTime;
 
-            if (timeSpendAsGhost >= ghostTime) {
-                isGhost = false;
-                health = 100f; // assuming health resets to full after ghost time ends 
+            if (timeSpendAsGhost >= ghostTime) { // ghost timer runs out
+                SceneManager.LoadScene("LoseScreen");
             }
         }
 
@@ -27,13 +27,6 @@ public class Player : MonoBehaviour
             health = 100f; // assuming ghosts can die
         }
 
-        if (isGhost == true)
-        {
-            animator.SetBool("isGhost", true); //switches player sprite to ghost sprite animation
-        }
-        else
-        {
-            animator.SetBool("isGhost", false); //does nothing
-        }
+        animator.SetBool("isGhost", isGhost);
     }
 }
