@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
         if (health <= 0f) {
             isGhost = true;
             health = 100f; // assuming ghosts can die
-            animator.SetBool("isGhost", isGhost);
+            animator.SetBool("IsGhost", isGhost);
         }
 
         
