@@ -104,7 +104,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 100
   m_AngularDrag: 0.05
-  m_GravityScale: 4
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -196,10 +196,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d134a6a8443c176a9c3ce756a1d9a1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos: {x: 5, y: -1, z: 0}
-  endPos: {x: 17, y: -1, z: 0}
-  maxMovementSpeed: 50
-  maxAccel: 25
+  startPos: {x: 5, y: 2, z: 0}
+  endPos: {x: 17, y: 2, z: 0}
+  maxMovementSpeed: 100
+  maxAccel: 50
   rb: {fileID: 9162189485854837680}
 --- !u!114 &-7747384400882635285
 MonoBehaviour:
