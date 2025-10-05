@@ -9,5 +9,6 @@ public class SceneChange : MonoBehaviour
     public void ChangeScene(string targetSceneName)
     {
         SceneManager.LoadScene(targetSceneName);
+        Time.timeScale = 1;
     }
 }
