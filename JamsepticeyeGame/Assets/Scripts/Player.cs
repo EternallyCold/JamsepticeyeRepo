@@ -21,12 +21,13 @@ public class Player : MonoBehaviour
                 SceneManager.LoadScene("LoseScreen");
             }
         }
-
+        
         if (health <= 0f) {
             isGhost = true;
             health = 100f; // assuming ghosts can die
+            animator.SetBool("isGhost", isGhost);
         }
 
-        animator.SetBool("isGhost", isGhost);
+        
     }
 }
