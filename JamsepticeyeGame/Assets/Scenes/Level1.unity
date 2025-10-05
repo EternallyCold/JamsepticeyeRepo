@@ -172,6 +172,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3450016494052054237, guid: b43775a76b6d2d44ab2f03f7b01b9368, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 7874421446035145288, guid: b43775a76b6d2d44ab2f03f7b01b9368, type: 3}
       propertyPath: endPos.x
       value: 96
@@ -810,6 +814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3450016494052054237, guid: b43775a76b6d2d44ab2f03f7b01b9368, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 7874421446035145288, guid: b43775a76b6d2d44ab2f03f7b01b9368, type: 3}
       propertyPath: endPos.x
       value: 21
@@ -1063,7 +1071,7 @@ GameObject:
   - component: {fileID: 437927292}
   m_Layer: 0
   m_Name: FirstSoulBoss
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1140,7 +1148,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &437927294
 Animator:
   serializedVersion: 7
@@ -1281,6 +1289,10 @@ PrefabInstance:
     - target: {fileID: 3450016494052054237, guid: b43775a76b6d2d44ab2f03f7b01b9368, type: 3}
       propertyPath: m_Name
       value: Enemy (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450016494052054237, guid: b43775a76b6d2d44ab2f03f7b01b9368, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7874421446035145288, guid: b43775a76b6d2d44ab2f03f7b01b9368, type: 3}
       propertyPath: endPos.x
@@ -1955,6 +1967,7 @@ GameObject:
   - component: {fileID: 1181292561}
   - component: {fileID: 1181292560}
   - component: {fileID: 1181292566}
+  - component: {fileID: 1181292567}
   m_Layer: 0
   m_Name: Cinder
   m_TagString: Player
@@ -2163,6 +2176,21 @@ MonoBehaviour:
   isGhost: 0
   ghostTime: 10
   animator: {fileID: 1181292563}
+--- !u!114 &1181292567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181292558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d34e68471b6fbfd9baf255edcd68f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRadius: 3
+  attackArc: 60
+  attackDamage: 20
 --- !u!1 &1280376186
 GameObject:
   m_ObjectHideFlags: 0
@@ -4146,6 +4174,10 @@ PrefabInstance:
     - target: {fileID: 3450016494052054237, guid: b43775a76b6d2d44ab2f03f7b01b9368, type: 3}
       propertyPath: m_Name
       value: Enemy (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450016494052054237, guid: b43775a76b6d2d44ab2f03f7b01b9368, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7874421446035145288, guid: b43775a76b6d2d44ab2f03f7b01b9368, type: 3}
       propertyPath: endPos.x
@@ -27258,6 +27290,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3450016494052054237, guid: b43775a76b6d2d44ab2f03f7b01b9368, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 7874421446035145288, guid: b43775a76b6d2d44ab2f03f7b01b9368, type: 3}
       propertyPath: endPos.x
       value: 37
@@ -27851,6 +27887,10 @@ PrefabInstance:
     - target: {fileID: 3450016494052054237, guid: b43775a76b6d2d44ab2f03f7b01b9368, type: 3}
       propertyPath: m_Name
       value: Enemy (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450016494052054237, guid: b43775a76b6d2d44ab2f03f7b01b9368, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7874421446035145288, guid: b43775a76b6d2d44ab2f03f7b01b9368, type: 3}
       propertyPath: endPos.x
