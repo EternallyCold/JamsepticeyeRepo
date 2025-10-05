@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WinScreen-1.png_0: 3002702570789864645
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
