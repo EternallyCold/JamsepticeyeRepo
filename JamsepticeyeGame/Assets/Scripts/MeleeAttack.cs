@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MeleeAttack : MonoBehaviour
 {
-    public float attackRadius = 3f;
+    public float attackRadius = 5f;
     public float attackArc = 60f; // degrees 
     public float attackDamage = 20f;
 
@@ -24,6 +24,8 @@ public class MeleeAttack : MonoBehaviour
                 if ((Vector3.Angle(dirVec, enemyPos - gameObject.transform.position) <= attackArc / 2f) && (dist <= attackRadius)) {
                     Enemy en = enemy.GetComponent<Enemy>();
                     en.health -= attackDamage;
+                    BossEnemy Boss = enemy.GetComponent<BossEnemy>();
+                    Boss.health -= attackDamage;
                 }
             }
         }

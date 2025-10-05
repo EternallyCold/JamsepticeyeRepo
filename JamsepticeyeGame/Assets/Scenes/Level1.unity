@@ -1198,6 +1198,9 @@ GameObject:
   - component: {fileID: 437927293}
   - component: {fileID: 437927292}
   - component: {fileID: 437927297}
+  - component: {fileID: 437927298}
+  - component: {fileID: 437927299}
+  - component: {fileID: 437927300}
   m_Layer: 0
   m_Name: FirstSoulBoss
   m_TagString: Enemy
@@ -1277,7 +1280,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!95 &437927294
 Animator:
   serializedVersion: 7
@@ -1361,7 +1364,7 @@ Transform:
   m_GameObject: {fileID: 437927291}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 111.96, y: -1.13, z: 0}
+  m_LocalPosition: {x: 112.1, y: -1.13, z: 0}
   m_LocalScale: {x: 3.6073, y: 3.6073, z: 3.6073}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1375,7 +1378,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437927291}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e88776555d90b0944a9b277dddf721e7, type: 3}
   m_Name: 
@@ -1384,6 +1387,49 @@ MonoBehaviour:
   DrownLayer:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &437927298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437927291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 088c42bfc54cbc84c99235a9829598cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 40
+  dps: 100
+--- !u!114 &437927299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437927291}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d34e68471b6fbfd9baf255edcd68f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRadius: 3
+  attackArc: 60
+  attackDamage: 20
+--- !u!114 &437927300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437927291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4c8a34115669653385f83e305104a10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 400
+  dps: 0
 --- !u!1 &522664434
 GameObject:
   m_ObjectHideFlags: 0
@@ -2328,7 +2374,7 @@ Transform:
   m_GameObject: {fileID: 1181292558}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.66, y: -1.879, z: 0}
+  m_LocalPosition: {x: -5.97, y: -1.879, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -2367,7 +2413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d34e68471b6fbfd9baf255edcd68f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRadius: 3
+  attackRadius: 5
   attackArc: 60
   attackDamage: 20
 --- !u!114 &1181292568
