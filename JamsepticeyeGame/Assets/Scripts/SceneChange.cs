@@ -11,4 +11,9 @@ public class SceneChange : MonoBehaviour
         SceneManager.LoadScene(targetSceneName);
         Time.timeScale = 1;
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
