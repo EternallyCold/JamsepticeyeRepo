@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b5b0d3e0560502b4ea64a5b8e7211ea4
+guid: 38aed6ca4a89a8349b33f285db7bacab
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3881587346782099227
-    second: LoseScreen-1.png_0
+      213: 3002702570789864645
+    second: WinScreen-1.png_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,7 +98,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LoseScreen-1.png_0
+      name: WinScreen-1.png_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b171999502b2ed530800000000000000
-      internalID: 3881587346782099227
+      spriteID: 5c40512441ebba920800000000000000
+      internalID: 3002702570789864645
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      LoseScreen-1.png_0: 3881587346782099227
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

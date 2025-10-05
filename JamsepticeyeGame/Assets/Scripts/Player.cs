@@ -23,13 +23,15 @@ public class Player : MonoBehaviour
             timeSpendAsGhost += Time.deltaTime;
 
             if (timeSpendAsGhost >= ghostTime) { // ghost timer runs out
-                SceneManager.LoadScene("LoseScreen");
+                isGhost = false;
+                animator.SetBool("IsGhost", isGhost);
+                health = 100f;
+                timeSpendAsGhost = 0f;
             }
         }
         
         if (health <= 0f) {
             isGhost = true;
-            health = 100f; // assuming ghosts can die
             animator.SetBool("IsGhost", isGhost);
         }
 
