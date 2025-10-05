@@ -18,11 +18,11 @@ public class PauseScript : MonoBehaviour
         PauseButton.SetActive(true);
         Time.timeScale = 1;
     }
-    public void Controls()
+    /*public void Controls()
     {
         PauseMenu.SetActive(false);
         ControlsMenu.SetActive(true);
-    }
+    }*/
     public void Restart()
     {
         SceneManager.LoadScene("Level1");
