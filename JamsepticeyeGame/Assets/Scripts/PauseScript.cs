@@ -4,15 +4,18 @@ using UnityEngine.SceneManagement;
 public class PauseScript : MonoBehaviour
 {
     [SerializeField] GameObject PauseMenu;
+    [SerializeField] GameObject PauseButton;
     [SerializeField] GameObject ControlsMenu;
     public void Pause()
     {
         PauseMenu.SetActive(true);
+        PauseButton.SetActive(false);
         Time.timeScale = 0;
     }
     public void Resume()
     {
         PauseMenu.SetActive(false);
+        PauseButton.SetActive(true);
         Time.timeScale = 1;
     }
     public void Controls()
