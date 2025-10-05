@@ -26,6 +26,10 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
 
+        Animator ourAnimator = GetComponent<Animator>();
+
+        ourAnimator.SetBool("IsFacingRight", isFacingRight);
+
         Flip();
     }
 
@@ -44,9 +48,6 @@ public class PlayerMovement : MonoBehaviour
         if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
         {
             isFacingRight = !isFacingRight;
-            Vector3 localScale = transform.localScale;
-            localScale.x *= -1f;
-            transform.localScale = localScale;
         }
     }
 }
