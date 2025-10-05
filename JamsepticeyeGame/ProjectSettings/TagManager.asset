@@ -6,6 +6,7 @@ TagManager:
   tags:
   - noclip
   - Enemy
+  - collectible
   layers:
   - Default
   - TransparentFX
