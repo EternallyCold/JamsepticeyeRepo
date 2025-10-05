@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     void Update()
     {
 
-        Slider.value = health;
+        Slider.value = health; // this allows the healthbar to work
 
         if (isGhost) {
             timeSpendAsGhost += Time.deltaTime;
