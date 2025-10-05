@@ -27,12 +27,14 @@ public class Player : MonoBehaviour
                 animator.SetBool("IsGhost", isGhost);
                 health = 100f;
                 timeSpendAsGhost = 0f;
+                gameObject.layer = 3;
             }
         }
         
         if (health <= 0f) {
             isGhost = true;
             animator.SetBool("IsGhost", isGhost);
+            gameObject.layer = 7;
         }
 
         
