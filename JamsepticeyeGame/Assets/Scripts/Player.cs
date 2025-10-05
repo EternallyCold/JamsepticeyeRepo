@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    public Slider Slider;
     public float health = 100f;
     public bool isGhost = false;
     public float ghostTime = 10f; // in seconds, low number for testing
@@ -14,6 +16,9 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+
+        Slider.value = health;
+
         if (isGhost) {
             timeSpendAsGhost += Time.deltaTime;
 
